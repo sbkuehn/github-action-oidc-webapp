@@ -9,7 +9,7 @@ permissions:
 env:
   AZURE_WEBAPP_NAME: my-app    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  NUGET_VERSION: '5.3.x'           # set this to the dot net version to use
+  NUGET_VERSION: '6.2.1'           # set this to the dot net version to use
 
 jobs:
   build-and-deploy:
@@ -42,7 +42,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with: 
         app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
-        package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/SampleWebApplication/'
+        package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/MyFirstAzureWebApp/'
   
     # Azure logout 
     - name: logout
