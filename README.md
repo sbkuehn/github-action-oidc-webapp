@@ -1,8 +1,3 @@
-# github-action-testing
+# GitHub Action Testing
 
-testing this out
-testing this out again
-testing again
-What about now?
-testing, testing, testing
-how about now?
+Example code to test GitHub Actions with Workload Identity Federation.
